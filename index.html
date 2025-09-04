@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Emmanuel Inelus">
+  <meta name="author" content="Emmanuel Inelus">
+  <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Inelus</title>
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+
+<body>
+  <header>
+    <h1><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span></h1>
+    <h2>Emmanuel Inelus</h2>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/emmanuel-inelus-7751a5224/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/30?lang=eng">Alma 30:44</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    
+    <section class="left-column">
+      <div class="card about-me">
+        <h2>About Me</h2>
+        <img src="images/emmanuel.png" alt="Photo of Emmanuel Inelus" class="profile-img" />
+        <p>Hello! My name is Emmanuel Inelus from Port-au-Prince, Haiti. I'm passionate about learning web development and excited to build dynamic websites. I enjoy reading, exploring new technologies, and sharing knowledge with others. I also like to spend time working on projects outside of my field to gain more knowledge.</p>
+      </div>
+
+      <div class="card">
+        <h2>Port-au-Prince</h2>
+        <p>Port-au-Prince is the capital of Haiti, a country located in the Caribbean. Haiti is a country rich in culture and history.Back in 2010 ,an earthquake destroyed most of its capital city , it was a huge disaster but the people are resilient and working and praying for the best </p>
+        <img src="images/haitian-flag.png" alt="Flag of Haiti" />
+        <figcaption><em>Official Flag of Haiti</em></figcaption>
+      </div>
+    </section>
+
+    
+    <aside class="card resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> 🌺 Emmanuel Inelus 🌍 Haiti</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
+  </script>
+  <script src="scripts/getdates.js" defer></script>
+
+</body>
+</html>
+
