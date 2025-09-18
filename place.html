@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pétion-Ville</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Pétion-Ville</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/oasis-hotel-small.webp" media="(max-width: 600px)">
+        <source srcset="images/oasis-hotel-medium.webp" media="(max-width: 1000px)">
+        <img src="images/oasis-hotel-large.webp" alt="Oasis Hotel Pétion-Ville">
+      </picture>
+
+      <div class="data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 165.49 km2</li>
+          <li><strong>Population:</strong> 376,834 </li>
+        
+          <li><strong>Languages:</strong> Haitian Creole , French</li>
+          <li><strong>Currency:</strong> Haitian Gourdes </li>
+          <li><strong>Time Zone:</strong> UTC-05:00 (EST)</li>
+          <li><strong>Calling Code:</strong> +509</li>
+          <li><strong>Internet TLD:</strong> .ht</li>
+        </ul>
+      </div>
+
+      <div class="weather">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temperature">10</span> °C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="year"></span>  Emmanuel Inelus | Pétion-Ville
+    </p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
