@@ -1,0 +1,36 @@
+
+main {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+img {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+  opacity: 0;
+  animation: fade 15s;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+
+footer {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
