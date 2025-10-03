@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+
+      
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        
+      </select>
+
+      
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" id="rating2" name="rating" value="2"> ☆</label>
+        <label><input type="radio" id="rating3" name="rating" value="3"> ☆</label>
+        <label><input type="radio" id="rating4" name="rating" value="4"> ☆</label>
+        <label><input type="radio" id="rating5" name="rating" value="5"> ☆</label>
+      </fieldset>
+
+      
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      
+      <fieldset>
+        <legend>Which features did you find useful? (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features[]" value="durability"> Durability</label>
+        <label><input type="checkbox" id="feature2" name="features[]" value="design"> Design</label>
+        <label><input type="checkbox" id="feature3" name="features[]" value="performance"> Performance</label>
+        <label><input type="checkbox" id="feature4" name="features[]" value="price"> Price</label>
+      </fieldset>
+
+      
+      <label for="reviewText">Written Review (Optional):</label>
+       <textarea id="reviewText" name="reviewText" rows="4" cols="40" placeholder=""></textarea>
+
+      
+      <label for="userName">Your Name (Optional):</label>
+      <input type="text" id="userName" name="userName" >
+
+      
+      <input type="submit" value="Post Review">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Emmanuel Inelus | Haiti</p>
+  </footer>
+</body>
+</html>
