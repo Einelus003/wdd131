@@ -10,19 +10,19 @@ button.addEventListener('click', function () {
     li.textContent = input.value;
     deleteButton.textContent = '❌';
 
-    // Add class to delete button to detect it in event delegation
+ 
     deleteButton.classList.add('delete');
 
     li.append(deleteButton);
     list.append(li);
 
-    input.value = '';     // Clear input
+    input.value = '';     
   }
 
-  input.focus();          // Always return focus to input
+  input.focus();          
 });
 
-// Use event delegation for delete button
+
 list.addEventListener('click', function (e) {
   if (e.target.classList.contains('delete')) {
     const li = e.target.parentElement;
